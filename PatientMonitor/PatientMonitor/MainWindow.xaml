@@ -1,0 +1,56 @@
+﻿<Window x:Class="PatientMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="500" Width="1500" xmlns:my="clr-namespace:PatientMonitor">
+    <Grid Margin="10,10,17,-1">
+        <Label Content="" Height="44" HorizontalAlignment="Left" Margin="135,34,0,0" Name="pulseRate1" VerticalAlignment="Top" Width="86" FontSize="28" Foreground="#FF0000C5"/>
+        <Label Content="" Height="44" HorizontalAlignment="Left" Margin="135,86,0,0" Name="breathingRate1" VerticalAlignment="Top" Width="86" FontSize="28" Foreground="#FF0000C5"  />
+        <Label Content="" Height="44" HorizontalAlignment="Left" Margin="135,136,0,0" Name="systolic1" VerticalAlignment="Top" Width="86" FontSize="28" Foreground="#FF0000C5"  />
+        <Label Content="" Height="44" HorizontalAlignment="Left" Margin="135,187,0,0" Name="diastolic1" VerticalAlignment="Top" Width="86" FontSize="28" Foreground="#FF0000C5" />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="227,39,0,0" x:Name="heartRateLower1" VerticalAlignment="Top" />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="227,91,0,0" x:Name="breathingRateLower1" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="227,141,0,0" x:Name="systolicLower1" VerticalAlignment="Top" />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="227,192,0,0" x:Name="diastolicLower1" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="333,39,0,0" x:Name="heartRateUpper1" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="333,90,0,0" x:Name="breathingRateUpper1" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="333,141,0,0" x:Name="systolicUpper1" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="333,192,0,0" x:Name="diastolicUpper1" VerticalAlignment="Top"  />
+        <Label Content="Lower Limits" Height="28" HorizontalAlignment="Left" Margin="227,6,0,0" Name="LowerLimits1" VerticalAlignment="Top" ClipToBounds="False"  />
+        <Label Content="Upper Limits" Height="28" HorizontalAlignment="Left" Margin="332,6,0,0" Name="UpperLimits1" VerticalAlignment="Top" ClipToBounds="False"  />
+        <Label Content="" Height="44" HorizontalAlignment="Left" Margin="135,238,0,0" Name="temperature1" VerticalAlignment="Top" Width="86" FontSize="28" Foreground="#FF0000C5" />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="227,243,0,0" x:Name="temperatureLower1" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="333,243,0,0" x:Name="temperatureUpper1" VerticalAlignment="Top"  />
+        <Label Content="Heart Rate" Height="44" HorizontalAlignment="Left" Margin="12,39,0,0" Name="HeartRate1" VerticalAlignment="Top" Width="135" FontSize="14" />
+        <Label Content="Breathing Rate" Height="44" HorizontalAlignment="Left" Margin="12,90,0,0" Name="BreathingRate1" VerticalAlignment="Top" Width="135" FontSize="14" />
+        <Label Content="Systolic Pressure" Height="44" HorizontalAlignment="Left" Margin="12,141,0,0" Name="SystolicPressure1" VerticalAlignment="Top" Width="135" ClipToBounds="True" FontSize="14" />
+        <Label Content="Diastolic Pressure" Height="44" HorizontalAlignment="Left" Margin="12,192,0,0" Name="DiastolicPressure1" VerticalAlignment="Top" Width="135" FontSize="14" />
+        <Label Content="Temperature" Height="44" HorizontalAlignment="Left" Margin="12,243,0,0" Name="Temperature1" VerticalAlignment="Top" Width="135" FontSize="14"  />
+        <CheckBox Content="Mute Alarm" Height="18" HorizontalAlignment="Left" Margin="12,298,0,0" Name="AlarmMute1" VerticalAlignment="Top" Width="96" />
+        <Label Content="Bed 1" HorizontalAlignment="Left" Name="Bed1" Margin="12,6,0,0" VerticalAlignment="Top" Height="28" Width="43" Loaded="patientSelector_SelectionChanged"/>
+
+        <Label Content="" Height="44" HorizontalAlignment="Left" Margin="750,34,0,0" Name="pulseRate2" VerticalAlignment="Top" Width="86" FontSize="28" Foreground="#FF0000C5"/>
+        <Label Content="" Height="44" HorizontalAlignment="Left" Margin="750,86,0,0" Name="breathingRate2" VerticalAlignment="Top" Width="86" FontSize="28" Foreground="#FF0000C5"  />
+        <Label Content="" Height="44" HorizontalAlignment="Left" Margin="750,136,0,0" Name="systolic2" VerticalAlignment="Top" Width="86" FontSize="28" Foreground="#FF0000C5"  />
+        <Label Content="" Height="44" HorizontalAlignment="Left" Margin="750,187,0,0" Name="diastolic2" VerticalAlignment="Top" Width="86" FontSize="28" Foreground="#FF0000C5" />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="857,39,0,0" x:Name="heartRateLower2" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="857,91,0,0" x:Name="breathingRateLower2" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="857,141,0,0" x:Name="systolicLower2" VerticalAlignment="Top" />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="857,192,0,0" x:Name="diastolicLower2" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="963,39,0,0" x:Name="heartRateUpper2" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="963,90,0,0" x:Name="breathingRateUpper2" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="963,141,0,0" x:Name="systolicUpper2" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="963,192,0,0" x:Name="diastolicUpper2" VerticalAlignment="Top"  />
+        <Label Content="Lower Limits" Height="28" HorizontalAlignment="Left" Margin="857,6,0,0" Name="LowerLimits2" VerticalAlignment="Top" ClipToBounds="False"  />
+        <Label Content="Upper Limits" Height="28" HorizontalAlignment="Left" Margin="963,6,0,0" Name="UpperLimits2" VerticalAlignment="Top" ClipToBounds="False"  />
+        <Label Content="" Height="44" HorizontalAlignment="Left" Margin="135,238,0,0" Name="temperature2" VerticalAlignment="Top" Width="86" FontSize="28" Foreground="#FF0000C5" />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="857,243,0,0" x:Name="temperatureLower2" VerticalAlignment="Top"  />
+        <my:NumericUpDown HorizontalAlignment="Left" Margin="963,243,0,0" x:Name="temperatureUpper2" VerticalAlignment="Top"  />
+        <Label Content="Heart Rate" Height="44" HorizontalAlignment="Left" Margin="612,39,0,0" Name="HeartRate2" VerticalAlignment="Top" Width="135" FontSize="14" />
+        <Label Content="Breathing Rate" Height="44" HorizontalAlignment="Left" Margin="612,90,0,0" Name="BreathingRate2" VerticalAlignment="Top" Width="135" FontSize="14" />
+        <Label Content="Systolic Pressure" Height="44" HorizontalAlignment="Left" Margin="612,141,0,0" Name="SystolicPressure2" VerticalAlignment="Top" Width="135" ClipToBounds="True" FontSize="14" />
+        <Label Content="Diastolic Pressure" Height="44" HorizontalAlignment="Left" Margin="612,192,0,0" Name="DiastolicPressure2" VerticalAlignment="Top" Width="135" FontSize="14" />
+        <Label Content="Temperature" Height="44" HorizontalAlignment="Left" Margin="612,243,0,0" Name="Temperature2" VerticalAlignment="Top" Width="135" FontSize="14"  />
+        <CheckBox Content="Mute Alarm" Height="18" HorizontalAlignment="Left" Margin="612,298,0,0" Name="AlarmMute2" VerticalAlignment="Top" Width="96" />
+        <Label Content="Bed 2" HorizontalAlignment="Left" Name="Bed2" Margin="612,6,0,0" VerticalAlignment="Top" Height="28" Width="43" Loaded="patientSelector_SelectionChanged"/>
+    </Grid>
+</Window>
